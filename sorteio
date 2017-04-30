@@ -1,0 +1,11 @@
+import random
+from trello import TrelloApi
+
+quadroID = ' ' #Nome do quadro
+trello = TrelloApi(' ','none')  #API Key
+trello.set_token('') #Token
+board = trello.boards.get(quadroID)
+lista = trello.boards.get_list(board['id'])
+cards = trello.lists.get_card(lista[0]['id'])
+print cards[random.randint(0,len(cards))]['name']
+
