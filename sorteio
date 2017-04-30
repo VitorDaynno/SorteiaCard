@@ -1,5 +1,7 @@
+#Vítor Daynno 30/04/2017
 import random
 from trello import TrelloApi
+
 
 quadroID = ' ' #Nome do quadro
 trello = TrelloApi(' ','none')  #API Key
