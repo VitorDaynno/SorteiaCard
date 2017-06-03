@@ -1,10 +1,11 @@
 #Vitor Daynno 30/04/2017
 import random
+import sys
 from trello import TrelloApi
 from Config import Config
 
 chaves = Config()
-quadroID = 'fLiSU3im' #Nome do quadro
+quadroID = sys.argv[1]  #Nome do quadro
 trello = TrelloApi(chaves.get_Api_Key(),'none')  #API Key
 trello.set_token(chaves.get_Token()) #Token
 board = trello.boards.get(quadroID)
