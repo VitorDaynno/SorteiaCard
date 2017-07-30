@@ -4,7 +4,7 @@ class Config:
         token = '' # Seu token
 
 	def __init__(self):
-	    print 'teste'
+	    pass
 
 	def get_Api_Key(self):
 		return self.__class__.api_Key
